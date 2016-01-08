@@ -1,0 +1,21 @@
+{
+  name: 'dispatcher',
+  main: 'dispatcher.js',
+  homepage: 'https://github.com/quxbaz/dispatcher',
+  authors: [
+    'David Yeung <quxbaz@gmail.com>'
+  ],
+  description: 'Simple implementation of the publisher/subscriber pattern.',
+  moduleType: [
+    'es6'
+  ],
+  license: 'MIT',
+  private: true,
+  ignore: [
+    '**/.*',
+    'node_modules',
+    'bower_components',
+    'test',
+    'tests'
+  ]
+}
