@@ -18,9 +18,9 @@ describe("Dispatcher", function() {
     d.subscribe('click', function(counter) {
       counter.count++;
     });
-    d.dispatch('click', counter);
+    d.publish('click', counter);
     assert(counter.count == 1);
-    d.dispatch('click', counter);
+    d.publish('click', counter);
     assert(counter.count == 2);
   });
 

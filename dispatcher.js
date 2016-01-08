@@ -25,7 +25,7 @@ fn.subscribe = function(event, handler) {
   this.handlers[event].push(handler);
 };
 
-fn.dispatch = function(event) {
+fn.publish = function(event) {
   if (!this.handlers.hasOwnProperty(event))
     return;
   var rest = Array.prototype.slice.call(arguments, 1);
